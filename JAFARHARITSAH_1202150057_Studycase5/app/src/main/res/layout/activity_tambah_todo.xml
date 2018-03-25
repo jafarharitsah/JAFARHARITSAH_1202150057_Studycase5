@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.JAFARHARITSAH_1202150057_Studycase5.TambahTodo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="ToDo Name"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:id="@+id/namaTodo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Description"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:id="@+id/descTodo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Priority"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:id="@+id/prioTodo"
+            android:maxLines="1"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="add todo list"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_button"
+        android:onClick="addDataClicked"/>
+
+    </LinearLayout>
+</LinearLayout>
